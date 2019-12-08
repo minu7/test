@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+cmd="composer $*"
+docker run -it --rm \
+  -v $PWD:/home \
+  composer $cmd
